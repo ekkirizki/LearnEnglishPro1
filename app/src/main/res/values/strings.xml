@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Learn English Pro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nama_aplikasi">Learn English Pro</string>
+
+    <!-- label yg muncul(merek) -->
+    <string name="namaLabelNya">Digital Dictionary</string>
+
+    <!-- tulisan yg muncul pada kotak cari. -->
+    <string name="tulisanDiKotakCari">Search here---</string>
+
+    <!-- untuk menu. -->
+    <string name="menu_cari">Search---</string>
+
+    <!-- akan terlihat di search settings utk kode ini.  -->
+    <string name="artinya">Means</string>
+
+    <!-- instruksi pada halaman utama. -->
+    <string name="instruksi_utama">Search what you want search</string>
+
+    <!-- akan di tunjukan di atas hasil pencarian -->
+    <plurals name="hasil_pencarian">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+
+    <!-- ketika pencarian gagal -->
+    <string name="tak_ada_hasil">Empty \"%s\" in database</string>
+
+
+    <!-- String untuk login
+    <string name="app_name">LoginRegisterScreenDesign</string> -->
+    <string name="create_account">
+    <font color="#00ff00">text</font>
+    </string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="kamu_telah_berhasil_login">Successful</string>
+    <string name="beranda">Home</string>
+    <string name="kamus">Dictionary</string>
+    <string name="materi">Course</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close drawer</string>
+    <string name="title_activity_x1">x1</string>
+
+    <string name="app_first_run">First Run!</string>
+
+    <string name="english_indonesia">English-Indonesia</string>
+    <string name="indonesia_english">Indonesia-English</string>
+
+    <string name="translate">Translate</string>
+
+    <string name="share">Share</string>
+    <string name="share_description">
+        Forgetting about vocabulary? Download this app for your experience
+    </string>
+
+    <string name="search_by_meaning">Searching</string>
+
+    <string name="first_load">
+        System Load, Please Waiting
+    </string>
+    <string name="Akun">Account</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+
+    <string name="Kamus">English-Indonesian</string>
+    <string name="Kamus1">Indonesian-English</string>
+    <string name="title_activity_kamus3">Kamus3</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="section_format">Section1</string>
+    <string name="title_activity_kamus2">Kamus2</string>
+
+</resources>
