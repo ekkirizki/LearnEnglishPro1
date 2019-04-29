@@ -14,7 +14,9 @@ public class materi extends AppCompatActivity {
         setContentView(R.layout.activity_materi);
     }
 
-    public void Gramar(View view) {
-    startActivity(new Intent(this, Youtube.class));
+    public void Grammar(View view) {
+        Intent i = new Intent(this, ListMateri.class);
+        i.putExtra("Grammar", "Grammar");
+        startActivity(i);
     }
 }

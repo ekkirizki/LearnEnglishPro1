@@ -13,11 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"/>
+        <activity android:name=".ListMateri"></activity>
+        <activity android:name=".DetailActivity" />
         <activity
             android:name=".Kamus2"
             android:label="@string/title_activity_kamus2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -39,15 +40,15 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".chatroom">
-        </activity>
+        <activity android:name=".NightModeActivity" />
+        <activity android:name=".chatroom"></activity>
         <activity
             android:name=".ChatActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".HomeActivity" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".materi" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".FeedbackActivity" />

@@ -41,7 +41,7 @@ dependencies {
 
     implementation "com.github.mancj:MaterialSearchBar:$searchbarVersion"
     implementation 'com.google.firebase:firebase-database:16.1.0'
-    implementation files ('libs/YouTubeAndroidPlayerApi.jar')
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
     implementation 'com.google.firebase:firebase-firestore:18.2.0'
 }
 apply plugin: 'com.google.gms.google-services'

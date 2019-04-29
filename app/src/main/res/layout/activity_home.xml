@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="7dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -122,7 +132,7 @@
             android:clickable="true"
             android:id="@+id/quiz"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="Quiz">
+            android:onClick="GroupChat">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,7 +143,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/ic_attach_file_black_24dp"
+                    android:background="@drawable/ic_wifi_black_24dp"
                     android:padding="10dp" />
                 <!--android:src="@drawable/ic_control_point_black_24dp"-->
 
@@ -141,7 +151,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Quiz"
+                    android:text="Group Chat"
                     android:textStyle="bold" />
 
                 <View
@@ -155,11 +165,57 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Latihan Soal"
+                    android:text="Ruang obrolan untuk berinteraksi dengan orang lain"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="160dp"-->
+            <!--android:layout_height="190dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:clickable="true"-->
+            <!--android:id="@+id/quiz"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:onClick="Quiz">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="64dp"-->
+                    <!--android:layout_height="64dp"-->
+                    <!--android:background="@drawable/ic_attach_file_black_24dp"-->
+                    <!--android:padding="10dp" />-->
+                <!--&lt;!&ndash;android:src="@drawable/ic_control_point_black_24dp"&ndash;&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="Quiz"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:background="@color/lightgray" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="Latihan Soal"-->
+                    <!--android:textColor="@android:color/darker_gray" />-->
+
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
 
         <android.support.v7.widget.CardView
             android:layout_width="160dp"
@@ -210,62 +266,61 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clipToPadding="false"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
 
-        <android.support.v7.widget.CardView
-            android:layout_width="340dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:id="@+id/groupchat"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="GroupChat"
-            >
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="340dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:id="@+id/groupchat"-->
+            <!--android:clickable="true"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:onClick="GroupChat"-->
+            <!--&gt;-->
 
-            <LinearLayout
+            <!--<LinearLayout-->
 
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/ic_wifi_black_24dp"
-                    android:padding="10dp" />
-                <!--android:src="@drawable/ic_wifi_black_24dp"-->
+                <!--<ImageView-->
+                    <!--android:layout_width="64dp"-->
+                    <!--android:layout_height="64dp"-->
+                    <!--android:background="@drawable/ic_wifi_black_24dp"-->
+                    <!--android:padding="10dp" />-->
+                <!--&lt;!&ndash;android:src="@drawable/ic_wifi_black_24dp"&ndash;&gt;-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Group Chat"
-                    android:textStyle="bold" />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="Group Chat"-->
+                    <!--android:textStyle="bold" />-->
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:background="@color/lightgray" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Ruang obrolan untuk berinteraksi dengan orang lain"
-                    android:textColor="@android:color/darker_gray" />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="Ruang obrolan untuk berinteraksi dengan orang lain"-->
+                    <!--android:textColor="@android:color/darker_gray" />-->
 
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
 
-
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 </LinearLayout>
