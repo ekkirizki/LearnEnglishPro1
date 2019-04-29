@@ -1,6 +1,7 @@
 package com.example.learnenglishpro;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
@@ -11,7 +12,7 @@ import android.widget.Switch;
 
 public class NightModeActivity extends AppCompatActivity {
 
-    Switch switch_nightmode;
+    Switch switch_nightmode, bigSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,9 @@ public class NightModeActivity extends AppCompatActivity {
 //        }
 
         switch_nightmode = findViewById(R.id.switch_nightmode);
+        bigSize = findViewById(R.id.switch_bigsize);
+        SharedPreferences prefs = getSharedPreferences(getPackageName(), MODE_PRIVATE);
+
         int mode = AppCompatDelegate.getDefaultNightMode();
         if (mode == AppCompatDelegate.MODE_NIGHT_YES) {
             switch_nightmode.setChecked(true);
@@ -46,9 +50,19 @@ public class NightModeActivity extends AppCompatActivity {
                 }
             }
         });
+        bigSize.setChecked(prefs.getBoolean("bigSize", false));
     }
 
     public void save(View view) {
+        SharedPreferences.Editor editor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
+        editor.putBoolean("bigSize", bigSize.isChecked());
+        editor.apply();
+
+        if (bigSize.isChecked()){
+            bigSize.setTextSize(getResources().getDimension(R.dimen.big));
+        }else{
+            bigSize.setTextSize(getResources().getDimension(R.dimen.small));
+        }
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }
