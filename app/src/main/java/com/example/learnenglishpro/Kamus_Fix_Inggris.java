@@ -23,19 +23,19 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kamus1_1 extends Fragment implements MaterialSearchBar.OnSearchActionListener {
+public class Kamus_Fix_Inggris extends Fragment implements MaterialSearchBar.OnSearchActionListener {
 
 
     private KamusHelper kamusHelper;
     private SearchAdapter adapter;
 
     private ArrayList<KamusModel> list = new ArrayList<>();
-    private boolean isEnglish = false;
+    private boolean isEnglish = true;
 
     FirebaseUser mUser;
     FirebaseAuth mAuth;
 
-    public Kamus1_1() {
+    public Kamus_Fix_Inggris() {
         // Required empty public constructor
     }
 

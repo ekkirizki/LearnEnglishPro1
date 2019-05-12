@@ -7,8 +7,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.learnenglishpro.Kamus_;
-import com.example.learnenglishpro.Kamus1_1;
+import com.example.learnenglishpro.Kamus_Fix_Indo;
+import com.example.learnenglishpro.Kamus_Fix_Inggris;
 import com.example.learnenglishpro.R;
 
 /**
@@ -34,10 +34,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Fragment fragment = null;
         switch (position) {
             case 0:
-                fragment = new Kamus_();
+                fragment = new Kamus_Fix_Inggris();
                 break;
             case 1:
-                fragment = new Kamus1_1();
+                fragment = new Kamus_Fix_Indo();
                 break;
         }
         return fragment;
